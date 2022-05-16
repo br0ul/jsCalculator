@@ -10,12 +10,13 @@ window.onload = function() {
 
         switch (value) {
             case 'Rvt':
+            case '+/-':
                 result.style.fontSize = '22px';
                 result.innerText = 'Some unknown function';
                 setTimeout(() => {
                     result.style.fontSize = '56px';
                     result.innerText = '';
-                }, 500)
+                }, 600)
                 break;
             case '<-':
                 result.innerText = result.innerText.substring(0, result.innerText.length - 1);
