@@ -1,17 +1,6 @@
-/*
-.game_field {
-    height: 100%;
-    min-width: 600px;
-    text-align: center;
-    margin: 20px auto;
+.menu {
+    margin: 20px;
 }
-
-#cardGame {
-    width: 600px;
-    height: 600px;
-    border: 1px solid #000000;
-}
-*/
 
 ul {
     list-style: none;
