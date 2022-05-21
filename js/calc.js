@@ -1,7 +1,8 @@
 window.onload = function() {
     const calc = document.querySelector('.calc');
     const result = document.querySelector('#result');
-    buffer = 0;
+    buffer = "";
+    last = "";
 
     calc.addEventListener('click', function(event) {
         if (!event.target.classList.contains('calc__btn')) return;
@@ -60,6 +61,7 @@ window.onload = function() {
                 } else { result.innerText += value; }
 
             case '=':
+                last = result.innerText;
                 answer = butEqual();
                 if (answer) {
                     result.innerText = answer;
