@@ -10,6 +10,8 @@ window.onload = function() {
 
         switch (value) {
             case 'Rvt':
+                result.innerText = last;
+                break;
             case '+/-':
                 result.style.fontSize = '22px';
                 result.innerText = 'Some unknown function';
